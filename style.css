@@ -1,0 +1,479 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Navbar start */
+#navbar {
+    background: #f9f9f9;
+}
+
+#logo {
+    font-size: 36px;
+    font-weight: 550;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+
+#logo span {
+    color: rgb(249, 166, 11);
+}
+
+.navbar-toggler span {
+    color: rgb(249, 166, 11);
+}
+
+.navbar-nav {
+    margin-left: 20px;
+}
+
+.nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+
+.nav-item .nav-link:hover {
+    background: rgb(249, 166, 11);
+    color: white;
+}
+
+#navbar form button {
+    background: orange;
+    color: white;
+    border: none;
+}
+
+/* Navbar End */
+
+/*home section start*/
+.home {
+    min-height: 100vh;
+    /* Ensure the home section takes up at least 100% of the viewport height */
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('./images/bg1.jpg');
+    background-repeat: no-repeat;
+    /* No repeating background */
+    background-size: 2000%;
+    /* Make sure the image covers the full section */
+    background-size: contain;
+    background-position: center center;
+    /* Ensure the image is centered horizontally and vertically */
+    background-attachment: scroll;
+    /* Optional: makes the background scroll with the page (remove fixed if not needed) */
+}
+
+.home .content {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.home .content h5 {
+    color: white;
+    font-size: 38px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+}
+
+.home .content h1 {
+    color: white;
+    font-size: 70px;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+
+.changecontent::after {
+    content: ' ';
+    color: orange;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+
+@keyframes changetext {
+    0% {
+        content: "France";
+    }
+
+    10% {
+        content: "Spain";
+    }
+
+    20% {
+        content: "United States";
+    }
+
+    30% {
+        content: "China";
+    }
+
+    40% {
+        content: "India";
+    }
+
+    50% {
+        content: "Greece";
+    }
+
+    60% {
+        content: "Italy";
+    }
+
+    70% {
+        content: "Turkey";
+    }
+
+    80% {
+        content: "Mexico";
+    }
+
+    90% {
+        content: "Germany";
+    }
+
+    100% {
+        content: "United Kingdom";
+    }
+}
+
+.home .content p {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.home .content a {
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.home .content a:hover {
+    background: orange;
+    color: white;
+}
+
+@media(max-width:850px) {
+    .home {
+        background-position: 50%;
+    }
+
+    @media(max-width:450px) {
+        .home .content h5 {
+            font-size: 25px;
+        }
+
+        .home .content h1 {
+            font-size: 38px;
+        }
+
+        .home .content p {
+            font-size: 13px;
+        }
+    }
+}
+
+/*home section end*/
+
+
+/*section book start*/
+
+.book {
+    background: #f9f9f9;
+    padding: 50px;
+}
+
+.main-text h1 {
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+    background-color: lightgrey;
+}
+
+.main-text h1 span {
+    color: orange;
+}
+
+.book .card {
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+    background-color: none;
+}
+
+.book .row {
+
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.book form input {
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+
+.col-nd-6 {
+    margin: 0px -200px;
+}
+
+.book form textarea {
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 200px;
+}
+
+.book .submit {
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background: orange;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.book .submit:hover {
+    width: 170px;
+}
+
+@media(max-width:765px) {
+    .book {
+        padding: 0;
+    }
+
+    .main-text h1 {
+        padding: 20px;
+    }
+}
+
+/*section book end*/
+
+/*section packages start*/
+.main-text h1{
+    background-color: #d1cfcfbc;
+}
+.pc{
+    display: flex;
+    padding: 5px;
+    margin: 10px 20px;
+    justify-content: space-evenly;
+
+}
+.pack .packcontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 20px;
+}
+
+
+
+/*section packages end*/
+
+
+
+/*section services start*/
+.services .service-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.services .card {
+    background-color: #f8f9fa;
+    padding: 40px;
+    /* Increase padding for more internal space */
+    text-align: center;
+    border-radius: 10px;
+    /* Slightly round corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Increased shadow for a bigger card effect */
+    width: 350px;
+    /* Increase the width of the card */
+    transition: transform 0.3s;
+}
+
+.services .card:hover {
+    transform: translateY(-5px);
+    /* Adds a slight hover effect */
+}
+
+.services .card i {
+    font-size: 60px;
+    /* Increase icon size */
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.services .card h3 {
+    font-size: 24px;
+    /* Increase font size for the title */
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.services .card p {
+    font-size: 16px;
+    /* Increase font size for the description */
+    color: #666;
+}
+.main-text h1{
+    background-color: #d1cfcfbc;
+}
+/*section services end*/
+
+
+/*section gallary start*/
+.Gallary {
+    margin-top: 50px;
+}
+.main-text h1{
+    background-color: #d1cfcfbc;
+}
+.Gallary .card {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    cursor: pointer;
+}
+
+.Gallary .card img {
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.Gallary .card img:hover {
+    transform: scale(1.1);
+}
+
+
+/*section gallary end*/
+
+/* about start*/
+.About {
+    padding: 50px;
+    margin-top: 50px;
+    background: #f9f9f9;
+}
+.main-text h1{
+    background-color: #d1cfcfbc;
+}
+.About h1 span{
+    color: orange;
+}
+.About .card {
+    border-radius: 10px;
+}
+
+.About .card img {
+    border-radius: 10px;
+}
+
+.About h2 {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.About p {
+    font-weight: 500;
+}
+
+.About-btn {
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background-color: orange;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.About-btn:hover {
+    background-color: #ff8c00;
+    /* Darker orange on hover */
+    transform: scale(1.05);
+    /* Zoom effect on hover */
+}
+
+@media(max-width:765px) {
+    .book {
+        padding: 0;
+    }
+}
+
+
+
+/* about end*/
+
+/* footer start*/
+#footer1 {
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background: #f9f9f9;
+    bottom: 0;
+    top: 100;
+}
+
+#footer1 h1 {
+    font-weight: 600;
+    padding: 30px;
+    text-shadow: 0px 0px 0px 1px black;
+
+}
+
+#footer1 p.span {
+    color: orange;
+}
+
+#footer1 h1 span {
+    color: orange;
+}
+
+.social-link i {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.social-link i:hover {
+    background: #ffa500;
+}
+
+/*footer end*/
